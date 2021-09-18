@@ -13,7 +13,7 @@ VALUES('$primerNombre', '$segundoNombre', '$apellidos', '$username', '$password'
 if(mysqli_query($mysqli, $sql)){
     echo '<script language="javascript">';
 	echo 'alert("El Usuario se agrego satisfactoriamente");';
-	echo 'window.location="index.php";';
+	echo 'window.location="usuarios.php";';
 	echo '</script>';
 	
 } else {

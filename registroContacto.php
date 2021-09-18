@@ -11,18 +11,18 @@
 <body>
 <div class="icon-bar">
   <a href="home.php"><i class="fa fa-home"></i></a> 
-  <a href="contactos.php"><i class="fa fa-user"></i></a> 
-  <a class="active" href="contactos.php"><i class="fa fa-registered"></i></a>
-  <a href="print_all.php" target="_blank"><i class="fa fa-print"></i></a>
+  <a href="contactos.php"><i class="fa fa-address-book"></i></a> 
+  <a class="active" href="registroContacto.php"><i class="fa fa-registered"></i></a>  
+  <a href="usuarios.php"><i class="fa fa-user"></i></a> 
   <a href="logout.php"><i class="fa fa-power-off"></i></a> 
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<h2>Registrarse</h2>
+<h2>Crear Contacto</h2>
 <hr/>
-<form action="register.php" method="POST">
+<form action="registerC.php" method="POST">
   <div class="container">
-	<input type="text" placeholder="Primer Nombre" name="PrimerNobre" required>
-    <input type="text" placeholder="Segundo Nombre" name="SegundoNombre" required>
+	  <input type="text" placeholder="Primer Nombre" name="primerNombre" required>
+    <input type="text" placeholder="Segundo Nombre" name="segundoNombre" required>
     <input type="text" placeholder="Apellidos" name="apellidos" required>
   	<label>Fecha de Nacimiento</label>
     <input type="date" name="birthday" required>
@@ -32,7 +32,7 @@
     <input type="text" placeholder="Pais" name="pais" required>
     <div class="clearfix">
       <button type="submit" class="signupbtn">Guardar Contacto</button>
-	  <button type="reset" class="cancelbtn">Cancelar</button>
+	  <button type="reset" class="cancelbtn"><a href="contactos.php">Cancelar</a></button>
     </div>
   </div>
 </form>

@@ -23,9 +23,10 @@
 
 <div class="icon-bar">
   <a class="active" href="home.php"><i class="fa fa-home"></i></a> 
-  <a href="usuarios.php"><i class="fa fa-user"></i></a> 
-  <a href="registroUser.php"><i class="fa fa-registered"></i></a>
+  <a href="contactos.php"><i class="fa fa-address-book"></i></a> 
+  <a href="registroContacto.php"><i class="fa fa-registered"></i></a>
   <a href="print.php" target="_blank"><i class="fa fa-print"></i></a>
+  <a href="usuarios.php"><i class="fa fa-user"></i></a>
   <a href="logout.php"><i class="fa fa-power-off"></i></a> 
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

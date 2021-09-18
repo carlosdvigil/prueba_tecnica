@@ -30,10 +30,10 @@
 <body>
 
 <div class="icon-bar">
-  <a href="home.php"><i class="fa fa-home"></i></a> 
+  <a href="home.php"><i class="fa fa-home"></i></a>
+  <a href="contactos.php"><i class="fa fa-address-book"></i></a>   
+  <a href="registroContacto.php"><i class="fa fa-registered"></i></a>
   <a class="active" href="usuarios.php"><i class="fa fa-user"></i></a> 
-  <a href="registroUser.php"><i class="fa fa-registered"></i></a>
-  <a href="print.php" target="_blank"><i class="fa fa-print"></i></a>
   <a href="logout.php"><i class="fa fa-power-off"></i></a> 
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -45,35 +45,7 @@
 <form action="" method="POST">
 <input type="search" name="valueToSearh" placeholder="Búsqueda">
 <button type="submit" class="signupbtn" name="search" >Buscar</button>
+<button type="submit" class="signupbtn" name="add"><a href="registroUser.php">Crear Nuevo</a></button>
 </form>
 <br />
 <?php
-
-
-echo "<table border='1'>
-<tr>
-<th>Primer Nombre</th>
-<th>Segundo Nombre</th>
-<th>Apellidos</th>
-<th>Actualizar</th>
-<th>Eliminar</th>
-<th>Imprimir</th>
-</tr>";
-
-while($row = mysqli_fetch_array($result))
-{
-echo "<tr>";
-echo "<td>" . $row['primerNombre'] . "</td>";
-echo "<td>" . $row['segundoNombre'] . "</td>";
-echo "<td>" . $row['apellidos'] . "</td>";
-echo "<td><a href='edit.php?id=".$row['username']."'><img src='./images/edit.png' alt='Edit'></a></td>";
-echo "<td><a href='delete.php?id=".$row['username']."'><img src='./images/delete.png' alt='Delete'></a></td>";
-echo "<td><a href='print.php?id=".$row['username']."'><img src='./images/print.png' alt='Print'></a></td>";
-echo "</tr>";
-}
-echo "</table>";
-
-?>
-
-</body>
-</html> 

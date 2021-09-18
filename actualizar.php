@@ -5,12 +5,12 @@ include("session.php");
 $id = $_POST['id'];
 $primerNombre = $_POST['primerNombre'];
 $segundoNombre = $_POST['segundoNombre'];
-$apellido = $_POST['apellidos'];
+$apellidos = $_POST['apellidos'];
 $username = $_POST['username'];
 $password = $_POST['psw'];
 
-$sql = "UPDATE usuarios SET primerNombre='$primerNobre', segundoNombre='$segundoNombre', apellidos='$apellidos', username='$username', psw='$password' 
-WHERE username='$id'";
+$sql = "UPDATE usuarios SET primerNombre='$primerNombre', segundoNombre='$segundoNombre', apellidos='$apellidos', username='$username', psw='$password' 
+WHERE id='$id'";
 if(mysqli_query($mysqli, $sql)){
     echo '<script language="javascript">';
 	echo 'alert("Registro actualizado exitósamente");';
